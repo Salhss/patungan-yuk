@@ -10,8 +10,8 @@ const nunito = Nunito_Sans({
 
 export default function Home() {
   return (
-    <main className="flex justify-center items-center">
-      <div className="plaftform-container grid phone:grid-cols-2 phone:gap-2">
+    <main className="flex justify-center items-center laptop:h-screen">
+      <div className="plaftform-container grid phone:grid-cols-2 phone:gap-2 laptop:grid-cols-4 laptop:gap-8">
         {platforms.map((platform) => (
           <div className={nunito.className} key={platform._id}>
             <Card
