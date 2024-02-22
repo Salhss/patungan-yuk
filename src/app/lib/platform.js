@@ -100,3 +100,7 @@ export const platforms = [
     ],
   },
 ];
+
+export function findPlaformById(id) {
+  return platforms.filter((item) => item._id === id);
+}
